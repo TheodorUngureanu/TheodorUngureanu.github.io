@@ -1,50 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business card</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <main class="main">
-      <div class="card">
-        <img
-          class="card__picture"
-          src="img/IMG_7479.JPG"
-          alt="Profile picture"
-        />
-        <div class="card__text-container">
-          <header class="card__header">
-            <h1 class="card__heading">Theodor Ungureanu</h1>
-            <p class="card__specialization">Software Engineer</p>
-          </header>
-          <p class="card__description card__description--with-margin">
-            I am a software engineer passionate about mobile development, IoT and security.
-          </p>
-          <p class="card__description">
-            Socials:
-            <a
-              href="https://github.com/TheodorUngureanu"
-              target="_blank"
-              class="card__link"
-              >GitHub</a
-            >,
-            <a
-              href="https://www.linkedin.com/in/theodor-ungureanu/"
-              target="_blank"
-              class="card__link"
-              >Linkedin</a
-            >,
-            <a href="./trackify_manager.html">Trackify Manager</a>
-          </p>
+    <title>Theodor Ungureanu</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="hero__content">
+
+                <div class="hero__text">
+
+                    <h1 class="hero__title">Theodor Ungureanu</h1>
+
+                    <p class="hero__role">iOS & Systems Engineer</p>
+
+                    <p class="hero__description">
+                        I design and build mobile applications,
+                        developer tools, and systems software with
+                        a focus on reliability, performance, and privacy.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#projects" class="button button--primary">View Projects</a>
+                        <a href="https://github.com/TheodorUngureanu" target="_blank" class="button button--secondary">GitHub</a>
+                    </div>
+
+                    <p class="hero__skills">
+                        SwiftUI • iOS • IoT • C++ • Linux • Security
+                    </p>
+
+                </div>
+
+                <div class="hero__image">
+                    <img src="img/IMG_7479.JPG" alt="Theodor Ungureanu">
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </main>
-  </body>
+    </section>
+
+
+    <!-- PROJECTS (ONLY ONE SYSTEM) -->
+    <section id="projects" class="projects">
+        <div class="container">
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-grid">
+
+                <a href="trackify.html" class="project-card">
+                    <div class="project-card__logo">
+                        <img src="img/trackify_icon.png" alt="Trackify icon">
+                    </div>
+                    <h3>Trackify</h3>
+                    <p>Privacy-focused iOS app for tracking tasks and recurring activities.</p>
+
+                    <div class="project-tags">
+                        <span>SwiftUI</span>
+                        <span>iOS</span>
+                        <span>Widgets</span>
+                    </div>
+                </a>
+
+
+                <a href="habittool.html" class="project-card">
+                    <div class="project-card__logo">
+                        <img src="img/habitTool_icon.png" alt="HabitTool icon">
+                    </div>
+                    <h3>HabitTool</h3>
+                    <p>Simple habit tracker focused on consistency and daily progress.</p>
+
+                    <div class="project-tags">
+                        <span>iOS</span>
+                        <span>SwiftUI</span>
+                        <span>SwiftData</span>
+                        <span>Widgets</span>
+                    </div>
+                </a>
+
+
+                <a href="blackhole.html" class="project-card">
+                    <div class="project-card__logo">
+                        <img src="img/blackHole_icon.png" alt="Black Hole icon">
+                    </div>
+                    <h3>Black Hole</h3>
+                    <p>Digital adaptation of the classic Black Hole strategy board game with local multiplayer and AI opponents.</p>
+
+                    <div class="project-tags">
+                        <span>Swift</span>
+                        <span>SwiftUI</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
